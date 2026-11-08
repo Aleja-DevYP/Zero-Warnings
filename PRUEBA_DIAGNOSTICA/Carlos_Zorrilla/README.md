@@ -20,10 +20,9 @@ PRUEBA_DIAGNOSTICA/
     │
     ├── ejercicio1/                        <-- Ejercicio 1: Validador de Movimientos de Caballo
     │   ├── caballo.c                      (Código en C con alta precisión temporal)
-    │   ├── caballo.py                     (Código en Python)
-    │   ├── movimientos_500.txt            (Cadena de 224 movimientos provista en el examen)
+    │   ├── caballo.exe                    (Ejecutable compilado con GCC -O2)
+    │   ├── movimientos_500.txt            (Secuencia completa de 500 movimientos válidos desde a2)
     │   ├── tiempos_ejercicio1_c.txt       (Mediciones de tiempos en C para n=100 y 10x 500)
-    │   ├── tiempos_ejercicio1_python.txt  (Mediciones de tiempos en Python)
     │   └── compilar_y_ejecutar.bat        (Script de compilación y ejecución automática)
     │
     ├── ejercicio2/                        <-- Ejercicio 2: Polinomio (x+1)^n y Triángulo de Pascal

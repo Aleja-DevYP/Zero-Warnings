@@ -11,18 +11,16 @@ set "ROOT=%~dp0.."
 
 echo.
 echo ======================================================================
-echo === [PASO 1/3] EJECUTANDO EJERCICIO 1 (VALIDADOR DE CABALLO)
+echo === [PASO 1/3] EJECUTANDO EJERCICIO 1 (VALIDADOR DE CABALLO EN C)
 echo ======================================================================
 cd "%ROOT%\ejercicio1"
-echo 1.1 Ejecutando en Python...
-python caballo.py
-echo 1.2 Compilando en C con GCC...
+echo 1.1 Compilando en C con GCC...
 gcc -O2 caballo.c -o caballo.exe
 if %ERRORLEVEL% NEQ 0 (
     echo Error al compilar caballo.c
     exit /b %ERRORLEVEL%
 )
-echo 1.3 Ejecutando en C...
+echo 1.2 Ejecutando en C...
 caballo.exe
 
 echo.

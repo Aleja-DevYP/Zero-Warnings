@@ -22,13 +22,13 @@
 
 ---
 
-#### [00:30 - 01:45] 2. EJERCICIO 1: VALIDADOR DE CABALLO Y BENCHMARK
-*(Mostrar pantalla con la terminal ejecutando `caballo.exe` y `caballo.py`)*
+#### [00:30 - 01:45] 2. EJERCICIO 1: VALIDADOR DE CABALLO Y BENCHMARK (LENGUAJE C)
+*(Mostrar pantalla con la terminal ejecutando `caballo.exe`)*
 
-> *"En el **Ejercicio 1**, diseñamos un validador que toma la posición inicial $A_k$ y una cadena $C$ de $n$ movimientos en notación ajedrecística 'K + columna + fila'.  
+> *"En el **Ejercicio 1**, considerando que la consigna permitía el lenguaje de preferencia, seleccionamos **Lenguaje C** por su velocidad y control de memoria. Diseñamos un validador que toma la posición inicial $A_k$ y una cadena $C$ de $n$ movimientos en notación ajedrecística 'K + columna + fila'.  
 > **Fundamento técnico:** El algoritmo analiza léxicamente cada token: primero verifica que la pieza sea 'K' (detectando errores si aparece otra letra como 'Q'), luego verifica que la casilla esté en el rango de 'a1' a 'h8', y finalmente comprueba la regla de salto en 'L': $|\Delta col| = 1 \land |\Delta fila| = 2$ o viceversa. Al primer fallo, la ejecución se detiene y reporta el movimiento exacto.  
 > Como observamos en pantalla, el programa valida al 100% los 9 casos de prueba del enunciado.  
-> **Medición de Tiempos:** Para los 500 movimientos completos desde la posición inicial a2 verificados 10 veces consecutivas, en C tomó apenas 0.32 ms, frente a 5.67 ms en Python. Para $n=100$ movimientos, C promedió 6.16 microsegundos por verificación, demostrando una eficiencia aproximadamente 17 veces superior a Python gracias a la ejecución en código máquina nativo y memoria contigua."*
+> **Medición de Tiempos:** Para los 500 movimientos completos desde la posición inicial a2 verificados 10 veces consecutivas, en C tomó apenas **0.32 milisegundos**, demostrando una altísima eficiencia de procesamiento. Asimismo, para $n=100$ movimientos, C promedió tan solo **6.16 microsegundos** por verificación gracias a la ejecución en código máquina nativo y memoria contigua."*
 
 ---
 

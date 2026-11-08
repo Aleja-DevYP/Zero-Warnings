@@ -29,12 +29,11 @@ Zero_Warnings/
         ├── enlace_video_drive.txt           <-- Enlace de Google Drive al video de defensa
         ├── DEFENSA_VIDEO_GUION.md          <-- Guion cronometrado para la defensa audiovisual (<= 5 min)
         ├── README.md                       <-- Documentación técnica completa
-        ├── ejercicio1/                     <-- Ejercicio 1: Validador de Caballo (C y Python)
+        ├── ejercicio1/                     <-- Ejercicio 1: Validador de Caballo (Lenguaje C)
         │   ├── caballo.c
-        │   ├── caballo.py
+        │   ├── caballo.exe
         │   ├── movimientos_500.txt         (500 movimientos válidos desde a2)
-        │   ├── tiempos_ejercicio1_c.txt
-        │   ├── tiempos_ejercicio1_python.txt
+        │   ├── tiempos_ejercicio1_c.txt    (Benchmark 10x 500 movs y n=100)
         │   └── compilar_y_ejecutar.bat
         ├── ejercicio2/                     <-- Ejercicio 2: Polinomio (x+1)^n (C y Python)
         │   ├── pascal_polinomio.c          (Memoria dinámica malloc/free y 128-bits)
