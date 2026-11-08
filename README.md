@@ -11,7 +11,7 @@
 ---
 
 ## 👥 Integrantes del Equipo
-* **Carlos Alejandro Zorrilla Figuera** — C.I. V-28.783.889 *(Líder / Integrante)*
+* **Carlos Alejandro Zorrilla Figuera** — C.I. V-28.783.889
 * *(Espacio para los demás integrantes del grupo asignados por la cátedra)*
 
 ---
@@ -23,41 +23,46 @@ Cumpliendo con la directiva del profesor:
 
 ```text
 Zero_Warnings/
-├── README.md                               <-- Portada oficial del grupo
-└── PRUEBA_DIAGNOSTICA/
-    └── Carlos_Zorrilla/                     <-- Carpeta del estudiante
-        ├── enlace_video_drive.txt           <-- Enlace de Google Drive al video de defensa
-        ├── DEFENSA_VIDEO_GUION.md          <-- Guion cronometrado para la defensa audiovisual (<= 5 min)
-        ├── README.md                       <-- Documentación técnica completa
-        ├── ejercicio1/                     <-- Ejercicio 1: Validador de Caballo (Lenguaje C)
-        │   ├── caballo.c
-        │   ├── caballo.exe
-        │   ├── movimientos_500.txt         (500 movimientos válidos desde a2)
-        │   ├── tiempos_ejercicio1_c.txt    (Benchmark 10x 500 movs y n=100)
-        │   └── compilar_y_ejecutar.bat
-        ├── ejercicio2/                     <-- Ejercicio 2: Polinomio (x+1)^n (C y Python)
-        │   ├── pascal_polinomio.c          (Memoria dinámica malloc/free y 128-bits)
-        │   ├── pascal_polinomio.py
-        │   ├── tiempos_n100_c.txt
-        │   ├── tiempos_n100_python.txt
-        │   ├── tiempos_n100_comparacion.txt
-        │   └── compilar_y_ejecutar.bat
-        ├── ejercicio3/                     <-- Ejercicio 3: Analizador Léxico y Traductor en C
-        │   ├── traductor_c.c               (Carga en Heap y traducción sin alterar strings/comentarios)
-        │   ├── traductor_c.py
-        │   ├── ejemplo_entrada.c
-        │   ├── ejemplo_traducido.c
-        │   └── compilar_y_ejecutar.bat
-        └── scripts_instalacion/            <-- Scripts de ejecución por lotes
-            ├── instalar_dependencias.bat
-            └── ejecutar_todo.bat
+├── README.md                               <-- Portada oficial del grupo Zero Warnings
+└── PRUEBA_DIAGNOSTICA/                     <-- Carpeta grupal de la evaluación
+    ├── README.md                           (Índice de integrantes del grupo)
+    │
+    ├── Carlos_Zorrilla/                     <-- Entrega individual de Carlos Zorrilla
+    │   ├── enlace_video_drive.txt           <-- Enlace de Google Drive al video de defensa
+    │   ├── README.md                       <-- Documentación técnica de sus ejercicios
+    │   │
+    │   ├── ejercicio1/                     <-- Ejercicio 1: Validador de Caballo (Lenguaje C)
+    │   │   ├── caballo.c
+    │   │   ├── caballo.exe
+    │   │   ├── movimientos_500.txt         (500 movimientos válidos desde a2)
+    │   │   ├── tiempos_ejercicio1_c.txt    (Tiempos 10x 500 movs y n=100)
+    │   │   └── compilar_y_ejecutar.bat     (Ejecución individual)
+    │   │
+    │   ├── ejercicio2/                     <-- Ejercicio 2: Polinomio (x+1)^n (C y Python)
+    │   │   ├── pascal_polinomio.c          (Memoria dinámica malloc/free y 128-bits)
+    │   │   ├── pascal_polinomio.exe
+    │   │   ├── pascal_polinomio.py
+    │   │   ├── tiempos_n100_c.txt
+    │   │   ├── tiempos_n100_python.txt
+    │   │   ├── tiempos_n100_comparacion.txt
+    │   │   └── compilar_y_ejecutar.bat     (Ejecución individual)
+    │   │
+    │   └── ejercicio3/                     <-- Ejercicio 3: Analizador Léxico y Traductor en C
+    │       ├── traductor_c.c               (Carga en Heap dinámico y traducción sin alterar strings/comentarios)
+    │       ├── traductor_c.exe
+    │       ├── traductor_c.py
+    │       ├── ejemplo_entrada.c
+    │       ├── ejemplo_traducido.c
+    │       └── compilar_y_ejecutar.bat     (Ejecución individual)
+    │
+    └── [Carpeta_Otro_Integrante]/          <-- Espacio para cada compañero del grupo
 ```
 
 ---
 
-## ⚡ Ejecución Rápida
-Para compilar y ejecutar automáticamente todos los ejercicios en secuencia:
-```cmd
-cd PRUEBA_DIAGNOSTICA\Carlos_Zorrilla\scripts_instalacion
-ejecutar_todo.bat
-```
+## ⚡ Ejecución Individual de los Ejercicios
+Cada ejercicio cuenta con su propio script y comandos para ser ejecutado de forma independiente dentro de su respectivo directorio:
+
+* **Ejercicio 1:** Entrar a `ejercicio1/` y ejecutar `compilar_y_ejecutar.bat` o `caballo.exe`.
+* **Ejercicio 2:** Entrar a `ejercicio2/` y ejecutar `compilar_y_ejecutar.bat` o `python pascal_polinomio.py`.
+* **Ejercicio 3:** Entrar a `ejercicio3/` y ejecutar `compilar_y_ejecutar.bat` o `traductor_c.exe ejemplo_entrada.c ejemplo_traducido.c`.
