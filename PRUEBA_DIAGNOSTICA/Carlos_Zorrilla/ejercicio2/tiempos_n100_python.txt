@@ -1,0 +1,10 @@
+UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
+LENGUAJES Y COMPILADORES - PRUEBA DIAGNÓSTICA 2026-II
+EJERCICIO 2: TIEMPO DE GENERACIÓN (x+1)^100 EN PYTHON
+============================================================
+
+Parámetro n: 100
+Total de coeficientes: 101
+Coeficiente C(100, 50): 100891344545564193334812497256
+Iteraciones evaluadas: 5000
+Tiempo promedio por generación: 0.564484 ms (564.484 µs)

@@ -1,0 +1,22 @@
+UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
+LENGUAJES Y COMPILADORES - PRUEBA DIAGNÓSTICA 2026-II
+EJERCICIO 1: TIEMPOS DE EJECUCIÓN (PYTHON)
+============================================================
+
+1. Verificación 10 veces de la secuencia completa (500 movimientos):
+   Iteración 01: 0.44680 ms
+   Iteración 02: 0.45790 ms
+   Iteración 03: 0.44290 ms
+   Iteración 04: 0.44780 ms
+   Iteración 05: 2.12160 ms
+   Iteración 06: 1.42510 ms
+   Iteración 07: 0.61460 ms
+   Iteración 08: 0.47950 ms
+   Iteración 09: 0.47850 ms
+   Iteración 10: 0.45820 ms
+   Tiempo total 10 iteraciones: 7.39210 ms
+   Tiempo promedio: 0.73729 ms
+
+2. Verificación de n=100 movimientos (Promediado en 1000 iteraciones):
+   Tiempo promedio por corrida (n=100): 0.119465 ms (119.465 µs)
+   Tiempo acumulado: 119.9980 ms

@@ -1,0 +1,11 @@
+UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
+LENGUAJES Y COMPILADORES - PRUEBA DIAGNOSTICA 2026-II
+EJERCICIO 2: TIEMPO DE GENERACION (x+1)^100 EN C
+============================================================
+
+Parametro n: 100
+Total de coeficientes: 101
+Coeficiente C(100, 50): 100891344545564193334812497256
+Iteraciones evaluadas: 50000
+Tiempo total: 260.5642 ms
+Tiempo promedio por generacion: 0.005211 ms (5.211 us)

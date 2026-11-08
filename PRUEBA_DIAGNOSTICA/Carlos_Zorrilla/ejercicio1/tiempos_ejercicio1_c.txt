@@ -1,0 +1,22 @@
+UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
+LENGUAJES Y COMPILADORES - PRUEBA DIAGNOSTICA 2026-II
+EJERCICIO 1: TIEMPOS DE EJECUCION EN LENGUAJE C
+============================================================
+
+1. Verificacion 10 veces de la secuencia completa (500 movimientos):
+   Iteracion 01: 0.03350 ms
+   Iteracion 02: 0.03430 ms
+   Iteracion 03: 0.03280 ms
+   Iteracion 04: 0.03310 ms
+   Iteracion 05: 0.03320 ms
+   Iteracion 06: 0.03330 ms
+   Iteracion 07: 0.03290 ms
+   Iteracion 08: 0.03270 ms
+   Iteracion 09: 0.03300 ms
+   Iteracion 10: 0.03300 ms
+   Tiempo total 10 iteraciones: 0.33180 ms
+   Tiempo promedio: 0.03318 ms
+
+2. Verificacion de n=100 movimientos (Promediado en 1000 iteraciones):
+   Tiempo promedio por corrida (n=100): 0.005902 ms (5.902 us)
+   Tiempo acumulado: 5.9024 ms

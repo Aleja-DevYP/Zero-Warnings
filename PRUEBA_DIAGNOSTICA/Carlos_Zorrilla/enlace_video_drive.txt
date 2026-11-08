@@ -1,0 +1,24 @@
+UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
+VICERRECTORADO ACADÉMICO - COORDINACIÓN DE INGENIERÍA EN INFORMÁTICA
+ASIGNATURA: LENGUAJES Y COMPILADORES
+DOCENTE: Msc. Félix Márquez
+PERIODO LECTIVO: 2026-II
+
+PRUEBA DIAGNÓSTICA - ENLACE AL VIDEO DE DEFENSA (5%)
+========================================================================================
+
+ESTUDIANTE: Carlos Alejandro Zorrilla Figuera
+CÉDULA DE IDENTIDAD: V-28.783.889
+GRUPO: Zero Warnings
+ESLOGAN: "0 errores, 0 advertencias, 100% de fe."
+SECCIÓN: [Coloca tu Sección aquí]
+
+ENLACE DE GOOGLE DRIVE (Asegúrate de configurar los permisos en "Cualquier persona con el enlace puede ver"):
+https://drive.google.com/file/d/TU_ID_DE_VIDEO_AQUI/view?usp=sharing
+
+========================================================================================
+NOTAS IMPORTANTES PARA LA EVALUACIÓN DEL VIDEO:
+1. Duración: Menor o igual a 5 minutos (formato horizontal).
+2. Grabación con cámara y audio activos demostrando autoría.
+3. Presentación formal inicial con grupo, eslogan, nombre y sección.
+4. Demostración práctica en vivo de la ejecución de los tres ejercicios (C y Python).

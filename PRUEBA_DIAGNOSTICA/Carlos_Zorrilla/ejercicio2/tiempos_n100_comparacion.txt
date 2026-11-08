@@ -1,0 +1,43 @@
+UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
+VICERRECTORADO ACADÉMICO - COORDINACIÓN DE INGENIERÍA EN INFORMÁTICA
+ASIGNATURA: LENGUAJES Y COMPILADORES
+DOCENTE: Msc. Félix Márquez
+PERIODO LECTIVO: 2026-II
+
+EJERCICIO 2: COMPARACIÓN DE TIEMPOS DE EJECUCIÓN PYTHON VS C (n = 100)
+========================================================================================
+
+1. PARÁMETROS DEL EXPERIMENTO:
+   - Polinomio evaluado: (x + 1)^100
+   - Número de coeficientes binomiales generados: 101 términos (desde C(100, 0) hasta C(100, 100))
+   - Coeficiente central C(100, 50): 100891344545564193334812497256 (29 dígitos decimales / 97 bits)
+   - Método de generación: Programación dinámica con Triángulo de Pascal y memoria dinámica
+   - Entorno de prueba: Windows 64-bit, GCC (MinGW-W64 16.1.0) con optimización -O2 vs CPython 3.12.4
+
+2. RESULTADOS EXPERIMENTALES:
+   -------------------------------------------------------------------------------------
+   LENGUAJE        ITERACIONES      TIEMPO TOTAL (ms)    TIEMPO PROMEDIO (ms)    TIEMPO (µs)
+   -------------------------------------------------------------------------------------
+   Lenguaje C           50,000              253.48 ms             0.005070 ms       5.07 µs
+   Python 3.12           5,000            2,694.35 ms             0.538871 ms     538.87 µs
+   -------------------------------------------------------------------------------------
+
+3. FACTOR DE ACELERACIÓN (SPEEDUP):
+   - Speedup = Tiempo_Python / Tiempo_C = 538.87 µs / 5.07 µs = 106.28x
+   - El código en C es aproximadamente 106 VECES MÁS RÁPIDO que el código en Python.
+
+4. ANÁLISIS TÉCNICO (JUSTIFICACIÓN DESDE LA PERSPECTIVA DE LENGUAJES Y COMPILADORES):
+   a) Gestión de Memoria Dinámica:
+      - En C, la fila se aloja como un bloque contiguo en el Heap mediante una única llamada a malloc()
+        con sizeof(uint128_t) * 101. El acceso a memoria es O(1) con direccionamiento directo por punteros.
+      - En Python, cada elemento de la lista es un PyObject referenciado por punteros, lo que genera
+        fragmentación de caché y sobrecarga de recolección de basura (Reference Counting / GC).
+   b) Aritmética de Enteros Grandes (BigInt):
+      - En C, se utilizaron enteros nativos de 128 bits (unsigned __int128), ejecutados directamente
+        en registros de la CPU x86-64 en un par de instrucciones máquina.
+      - En Python, los enteros de más de 64 bits se manejan mediante la estructura PyLongObject,
+        que requiere asignación dinámica de dígitos en base 2^30 y operaciones en bucle por software.
+   c) Modelo de Ejecución:
+      - C es compilado a código de máquina nativo con vectorización y desenrollado de bucles (-O2).
+      - Python es interpretado mediante un bucle de despacho de bytecodes (eval-loop), introduciendo
+        costos de interpretación en cada suma e indexación.
