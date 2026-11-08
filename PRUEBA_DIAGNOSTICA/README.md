@@ -7,6 +7,7 @@ De acuerdo con las instrucciones de la cátedra:
 
 ---
 
-### 👥 Carpetas de los Integrantes:
-* [`Carlos_Zorrilla/`](./Carlos_Zorrilla/) — Carlos Alejandro Zorrilla Figuera (C.I. V-28.783.889)
-* *(Cada miembro del equipo debe crear su propia carpeta aquí con su nombre, conteniendo sus tres ejercicios y su respectivo enlace de video en `enlace_video_drive.txt`)*
+### 👥 Integrantes del Equipo:
+1. [`Carlos_Zorrilla/`](./Carlos_Zorrilla/) — **Carlos Alejandro Zorrilla Figuera** (C.I. V-28.783.889)
+2. [`Eldry_Valderrey/`](./Eldry_Valderrey/) — **Eldry Esaú Valderrey González** (C.I. V-31.113.039)
+3. [`Giovanni_Rinaldi/`](./Giovanni_Rinaldi/) — **Giovanni D'Stefano Rinaldi Pastrán** (C.I. V-28.694.021)

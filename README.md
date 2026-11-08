@@ -12,7 +12,8 @@
 
 ## 👥 Integrantes del Equipo
 * **Carlos Alejandro Zorrilla Figuera** — C.I. V-28.783.889
-* *(Espacio para los demás integrantes del grupo asignados por la cátedra)*
+* **Eldry Esaú Valderrey González** — C.I. V-31.113.039
+* **Giovanni D'Stefano Rinaldi Pastrán** — C.I. V-28.694.021
 
 ---
 
@@ -24,38 +25,21 @@ Cumpliendo con la directiva del profesor:
 ```text
 Zero_Warnings/
 ├── README.md                               <-- Portada oficial del grupo Zero Warnings
-└── PRUEBA_DIAGNOSTICA/                     <-- Carpeta grupal de la evaluación
-    ├── README.md                           (Índice de integrantes del grupo)
+└── PRUEBA_DIAGNOSTICA/                     <-- Carpeta compartida del grupo
+    ├── README.md                           (Índice de entregas de los integrantes)
     │
-    ├── Carlos_Zorrilla/                     <-- Entrega individual de Carlos Zorrilla
+    ├── Carlos_Zorrilla/                     <-- Entrega de Carlos Zorrilla
     │   ├── enlace_video_drive.txt           <-- Enlace de Google Drive al video de defensa
     │   ├── README.md                       <-- Documentación técnica de sus ejercicios
-    │   │
-    │   ├── ejercicio1/                     <-- Ejercicio 1: Validador de Caballo (Lenguaje C)
-    │   │   ├── caballo.c
-    │   │   ├── caballo.exe
-    │   │   ├── movimientos_500.txt         (500 movimientos válidos desde a2)
-    │   │   ├── tiempos_ejercicio1_c.txt    (Tiempos 10x 500 movs y n=100)
-    │   │   └── compilar_y_ejecutar.bat     (Ejecución individual)
-    │   │
-    │   ├── ejercicio2/                     <-- Ejercicio 2: Polinomio (x+1)^n (C y Python)
-    │   │   ├── pascal_polinomio.c          (Memoria dinámica malloc/free y 128-bits)
-    │   │   ├── pascal_polinomio.exe
-    │   │   ├── pascal_polinomio.py
-    │   │   ├── tiempos_n100_c.txt
-    │   │   ├── tiempos_n100_python.txt
-    │   │   ├── tiempos_n100_comparacion.txt
-    │   │   └── compilar_y_ejecutar.bat     (Ejecución individual)
-    │   │
-    │   └── ejercicio3/                     <-- Ejercicio 3: Analizador Léxico y Traductor en C
-    │       ├── traductor_c.c               (Carga en Heap dinámico y traducción sin alterar strings/comentarios)
-    │       ├── traductor_c.exe
-    │       ├── traductor_c.py
-    │       ├── ejemplo_entrada.c
-    │       ├── ejemplo_traducido.c
-    │       └── compilar_y_ejecutar.bat     (Ejecución individual)
+    │   ├── ejercicio1/                     <-- Validador de Caballo en Lenguaje C
+    │   ├── ejercicio2/                     <-- Polinomio (x+1)^n en C y Python
+    │   └── ejercicio3/                     <-- Analizador Léxico y Traductor en C
     │
-    └── [Carpeta_Otro_Integrante]/          <-- Espacio para cada compañero del grupo
+    ├── Eldry_Valderrey/                    <-- Entrega de Eldry Valderrey
+    │   └── enlace_video_drive.txt
+    │
+    └── Giovanni_Rinaldi/                   <-- Entrega de Giovanni Rinaldi
+        └── enlace_video_drive.txt
 ```
 
 ---
