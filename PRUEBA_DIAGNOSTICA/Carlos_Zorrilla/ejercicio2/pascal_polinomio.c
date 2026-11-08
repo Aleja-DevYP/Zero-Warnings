@@ -234,26 +234,6 @@ int main() {
     printf("Tiempo total (%d iteraciones): %.4f ms\n", repeticiones, total_ms);
     printf("Tiempo promedio por generacion: %.6f ms (%.3f us)\n", prom_ms, prom_us);
 
-    /* Guardar archivo txt */
-    FILE* out_txt = fopen("tiempos_n100_c.txt", "w");
-    if (!out_txt) {
-        out_txt = fopen("ejercicio2/tiempos_n100_c.txt", "w");
-    }
-    if (out_txt) {
-        fprintf(out_txt, "UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)\n");
-        fprintf(out_txt, "LENGUAJES Y COMPILADORES - PRUEBA DIAGNOSTICA 2026-II\n");
-        fprintf(out_txt, "EJERCICIO 2: TIEMPO DE GENERACION (x+1)^100 EN C\n");
-        fprintf(out_txt, "============================================================\n\n");
-        fprintf(out_txt, "Parametro n: 100\n");
-        fprintf(out_txt, "Total de coeficientes: 101\n");
-        fprintf(out_txt, "Coeficiente C(100, 50): %s\n", central_str);
-        fprintf(out_txt, "Iteraciones evaluadas: %d\n", repeticiones);
-        fprintf(out_txt, "Tiempo total: %.4f ms\n", total_ms);
-        fprintf(out_txt, "Tiempo promedio por generacion: %.6f ms (%.3f us)\n", prom_ms, prom_us);
-        fclose(out_txt);
-        printf("\nResultados exportados con exito a: tiempos_n100_c.txt\n");
-    }
-
     free(fila_100);
     return 0;
 }

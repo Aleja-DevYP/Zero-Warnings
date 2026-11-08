@@ -173,21 +173,6 @@ def main():
     
     # Medición de tiempo para n=100
     t_prom_ms, t_prom_us, fila_100 = benchmark_n100(repeticiones=5000)
-    
-    # Guardar en archivo txt
-    dir_path = os.path.dirname(os.path.abspath(__file__))
-    txt_path = os.path.join(dir_path, "tiempos_n100_python.txt")
-    with open(txt_path, "w", encoding="utf-8") as f:
-        f.write("UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)\n")
-        f.write("LENGUAJES Y COMPILADORES - PRUEBA DIAGNÓSTICA 2026-II\n")
-        f.write("EJERCICIO 2: TIEMPO DE GENERACIÓN (x+1)^100 EN PYTHON\n")
-        f.write("=" * 60 + "\n\n")
-        f.write(f"Parámetro n: 100\n")
-        f.write(f"Total de coeficientes: {len(fila_100)}\n")
-        f.write(f"Coeficiente C(100, 50): {fila_100[50]}\n")
-        f.write(f"Iteraciones evaluadas: 5000\n")
-        f.write(f"Tiempo promedio por generación: {t_prom_ms:.6f} ms ({t_prom_us:.3f} µs)\n")
-    print(f"\nArchivo guardado: {txt_path}")
 
 if __name__ == "__main__":
     main()

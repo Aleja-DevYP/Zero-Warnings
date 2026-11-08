@@ -234,29 +234,6 @@ int main() {
     printf("Tiempo total: %.4f ms\n", total_100_ms);
     printf("Tiempo promedio por verificacion (n=100): %.6f ms (%.3f us)\n", prom_100_ms, prom_100_us);
 
-    /* Escribir resultados en txt */
-    FILE* out_txt = fopen("tiempos_ejercicio1_c.txt", "w");
-    if (!out_txt) {
-        out_txt = fopen("ejercicio1/tiempos_ejercicio1_c.txt", "w");
-    }
-    if (out_txt) {
-        fprintf(out_txt, "UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)\n");
-        fprintf(out_txt, "LENGUAJES Y COMPILADORES - PRUEBA DIAGNOSTICA 2026-II\n");
-        fprintf(out_txt, "EJERCICIO 1: TIEMPOS DE EJECUCION EN LENGUAJE C\n");
-        fprintf(out_txt, "============================================================\n\n");
-        fprintf(out_txt, "1. Verificacion 10 veces de la secuencia completa (%d movimientos):\n", total_movs);
-        for (int i = 0; i < 10; i++) {
-            fprintf(out_txt, "   Iteracion %02d: %.5f ms\n", i + 1, tiempos_10[i]);
-        }
-        fprintf(out_txt, "   Tiempo total 10 iteraciones: %.5f ms\n", suma_10);
-        fprintf(out_txt, "   Tiempo promedio: %.5f ms\n\n", suma_10 / 10.0);
-        fprintf(out_txt, "2. Verificacion de n=100 movimientos (Promediado en %d iteraciones):\n", rep_100);
-        fprintf(out_txt, "   Tiempo promedio por corrida (n=100): %.6f ms (%.3f us)\n", prom_100_ms, prom_100_us);
-        fprintf(out_txt, "   Tiempo acumulado: %.4f ms\n", total_100_ms);
-        fclose(out_txt);
-        printf("\nResultados exportados con exito a: tiempos_ejercicio1_c.txt\n");
-    }
-
     free(datos_500);
     return 0;
 }
