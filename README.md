@@ -7,11 +7,12 @@
 
 > **Nombre del Grupo:** Zero Warnings  
 > **Eslogan:** *"0 errores, 0 advertencias, 100% de fe."*  
+> **Líder del Grupo:** Carlos Alejandro Zorrilla Figuera  
 
 ---
 
 ## 👥 Integrantes del Equipo
-* **Carlos Alejandro Zorrilla Figuera** — C.I. V-28.783.889
+* **Carlos Alejandro Zorrilla Figuera** — C.I. V-28.783.889 **(Líder)**
 * **Eldry Esaú Valderrey González** — C.I. V-31.113.039
 * **Giovanni D'Stefano Rinaldi Pastrán** — C.I. V-28.694.021
 
@@ -28,7 +29,7 @@ Zero_Warnings/
 └── PRUEBA_DIAGNOSTICA/                     <-- Carpeta compartida del grupo
     ├── README.md                           (Índice de entregas de los integrantes)
     │
-    ├── Carlos_Zorrilla/                     <-- Entrega de Carlos Zorrilla
+    ├── Carlos_Zorrilla/                     <-- Entrega de Carlos Zorrilla (Líder)
     │   ├── enlace_video_drive.txt           <-- Enlace de Google Drive al video de defensa
     │   ├── README.md                       <-- Documentación técnica de sus ejercicios
     │   ├── ejercicio1/                     <-- Validador de Caballo en Lenguaje C

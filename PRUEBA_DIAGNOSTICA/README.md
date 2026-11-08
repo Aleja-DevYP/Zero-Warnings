@@ -8,6 +8,6 @@ De acuerdo con las instrucciones de la cátedra:
 ---
 
 ### 👥 Integrantes del Equipo:
-1. [`Carlos_Zorrilla/`](./Carlos_Zorrilla/) — **Carlos Alejandro Zorrilla Figuera** (C.I. V-28.783.889)
+1. [`Carlos_Zorrilla/`](./Carlos_Zorrilla/) — **Carlos Alejandro Zorrilla Figuera** (C.I. V-28.783.889) — **Líder del Grupo**
 2. [`Eldry_Valderrey/`](./Eldry_Valderrey/) — **Eldry Esaú Valderrey González** (C.I. V-31.113.039)
 3. [`Giovanni_Rinaldi/`](./Giovanni_Rinaldi/) — **Giovanni D'Stefano Rinaldi Pastrán** (C.I. V-28.694.021)
