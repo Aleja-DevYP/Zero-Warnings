@@ -11,11 +11,10 @@ ESTUDIANTE: Giovanni D'Stefano Rinaldi Pastrán
 CÉDULA DE IDENTIDAD: V-28.694.021
 GRUPO: Zero Warnings
 ESLOGAN: "0 errores, 0 advertencias, 100% de fe."
-SECCIÓN: [Coloca tu Sección aquí]
+SECCIÓN: [SECCION 1]
 
 ENLACE DE GOOGLE DRIVE (Asegúrate de configurar los permisos en "Cualquier persona con el enlace puede ver"):
-https://drive.google.com/file/d/TU_ID_DE_VIDEO_AQUI/view?usp=sharing
-
+https://drive.google.com/file/d/1wZnP_gIMo0DlS7BMtAgqLfc0uDrZYu2A/view?usp=sharing
 ========================================================================================
 NOTAS IMPORTANTES PARA LA EVALUACIÓN DEL VIDEO:
 1. Duración: Menor o igual a 5 minutos (formato horizontal).
