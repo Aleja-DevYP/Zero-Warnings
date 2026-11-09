@@ -1,7 +1,15 @@
-"""EJERCICIO 2: Polinomio (x+1)^n mediante Triángulo de Pascal (Python)"""
+"""EJERCICIO 2: Polinomio (x+1)^n mediante Triangulo de Pascal (Python)"""
 
 import time
 import os
+import sys
+
+# Forzar codificacion UTF-8 para consola de Windows
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 
 def generar_triangulo_pascal(n):
     """
@@ -65,14 +73,14 @@ def formatear_polinomio(n, coeficientes):
 
 def calcular_paso_a_paso(n, coeficientes, x):
     """
-    Muestra de forma detallada y pedagógica el cálculo paso a paso
-    de f(x) = (x+1)^n según el polinomio generado.
+    Muestra de forma detallada y pedagogica el calculo paso a paso
+    de f(x) = (x+1)^n segun el polinomio generado.
     """
     print("\n" + "-" * 70)
-    print(f"CÁLCULO PASO A PASO PARA x = {x}, n = {n}: f({x}) = ({x} + 1)^{n}")
+    print(f"CALCULO PASO A PASO PARA x = {x}, n = {n}: f({x}) = ({x} + 1)^{n}")
     print("-" * 70)
     print(f"Polinomio expandido: {formatear_polinomio(n, coeficientes)}")
-    print(f"\nSustituyendo x = {x} en cada término del polinomio:")
+    print(f"\nSustituyendo x = {x} en cada termino del polinomio:")
     
     suma_acumulada = 0
     pasos_terminos = []
@@ -85,34 +93,34 @@ def calcular_paso_a_paso(n, coeficientes, x):
         suma_acumulada += valor_termino
         
         if grado == 0:
-            desc = f"Término independiente (grado 0): C({n},{k}) = {coef}"
+            desc = f"Termino independiente (grado 0): C({n},{k}) = {coef}"
             expr = f"{coef}"
         elif grado == 1:
-            desc = f"Término grado 1: C({n},{k}) * ({x})^1 = {coef} * {x} = {valor_termino}"
+            desc = f"Termino grado 1: C({n},{k}) * ({x})^1 = {coef} * {x} = {valor_termino}"
             expr = f"{coef}*({x})"
         else:
-            desc = f"Término grado {grado}: C({n},{k}) * ({x})^{grado} = {coef} * {potencia_x} = {valor_termino}"
+            desc = f"Termino grado {grado}: C({n},{k}) * ({x})^{grado} = {coef} * {potencia_x} = {valor_termino}"
             expr = f"{coef}*({x}^{grado})"
             
         pasos_terminos.append((expr, valor_termino))
         print(f"  Paso {k + 1:02d}: {desc}")
         
-    print("\nSumatoria de los términos:")
+    print("\nSumatoria de los terminos:")
     suma_str = " + ".join([str(val) for _, val in pasos_terminos])
     print(f"  f({x}) = {suma_str} = {suma_acumulada}")
     
-    # Comprobación directa
+    # Comprobacion directa
     resultado_directo = (x + 1) ** n
-    print(f"\nVerificación directa con la fórmula base (x + 1)^n:")
+    print(f"\nVerificacion directa con la formula base (x + 1)^n:")
     print(f"  ({x} + 1)^{n} = {x + 1}^{n} = {resultado_directo}")
     
     coinciden = (suma_acumulada == resultado_directo)
-    print(f"  ¿El cálculo coincide? {'SÍ [VERIFICADO CORRECTO]' if coinciden else 'NO [ERROR]'}")
+    print(f"  ¿El calculo coincide? {'SI [VERIFICADO CORRECTO]' if coinciden else 'NO [ERROR]'}")
     return suma_acumulada
 
 def benchmark_n100(repeticiones=5000):
     print("\n" + "=" * 70)
-    print(f"BENCHMARK PYTHON: GENERACIÓN DE (x+1)^100 ({repeticiones} ITERACIONES)")
+    print(f"BENCHMARK PYTHON: GENERACION DE (x+1)^100 ({repeticiones} ITERACIONES)")
     print("=" * 70)
     
     # Calentamiento
@@ -132,18 +140,18 @@ def benchmark_n100(repeticiones=5000):
     tiempo_prom_ms = tiempo_total_ms / repeticiones
     tiempo_prom_us = tiempo_prom_ms * 1000
     
-    print(f"Coeficientes generados para n=100: {len(fila)} términos")
+    print(f"Coeficientes generados para n=100: {len(fila)} terminos")
     print(f"Coeficiente central C(100, 50): {fila[50]}")
     print(f"Tiempo total ({repeticiones} iteraciones): {tiempo_total_ms:.4f} ms")
-    print(f"Tiempo promedio por generación: {tiempo_prom_ms:.6f} ms ({tiempo_prom_us:.3f} µs)")
+    print(f"Tiempo promedio por generacion: {tiempo_prom_ms:.6f} ms ({tiempo_prom_us:.3f} us)")
     
     return tiempo_prom_ms, tiempo_prom_us, fila
 
 def main():
-    print("=== EJERCICIO 2: POLINOMIO (x+1)^n Y TRIÁNGULO DE PASCAL (PYTHON) ===\n")
+    print("=== EJERCICIO 2: POLINOMIO (x+1)^n Y TRIANGULO DE PASCAL (PYTHON) ===\n")
     
-    # Demostración de las filas 0 a 7 (como en la figura del examen)
-    print("a) Coeficientes del triángulo de Pascal y polinomios generados (n=0 a 7):")
+    # Demostracion de las filas 0 a 7 (como en la figura del examen)
+    print("a) Coeficientes del triangulo de Pascal y polinomios generados (n=0 a 7):")
     triangulo = generar_triangulo_pascal(7)
     for n_idx, fila in enumerate(triangulo):
         coef_str = " ".join([str(c) for c in fila])
