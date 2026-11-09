@@ -1,0 +1,12 @@
+--- RESULTADOS DE LOS EJEMPLOS ---
+Para Ak=a1 n=4 -> Salida: movimiento CORRECTO.
+Para Ak=a1 n=4 -> Salida: INCORRECTO falla en el movimiento 3.
+Para Ak=a2 n=5 -> Salida: movimiento CORRECTO.
+Para Ak=a2 n=5 -> Salida: INCORRECTO falla en el movimiento 1.
+Para Ak=a8 n=2 -> Salida: movimiento CORRECTO.
+Para Ak=a8 n=2 -> Salida: INCORRECTO falla en el movimiento 2.
+Para Ak=a1 n=10 -> Salida: movimiento CORRECTO.
+Para Ak=a1 n=10 -> Salida: movimiento INCORRECTO falla letra Q no pertenece a un caballo.
+Para Ak=a1 n=10 -> Salida: INCORRECTO falla en el movimiento 9.
+--- MEDICIÓN DE RENDIMIENTO ---
+Tiempo total para verificar 500 movimientos 10 veces: 0.001367 segundos

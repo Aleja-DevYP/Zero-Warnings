@@ -1,0 +1,2 @@
+Tiempo de ejecucion Python (n=100): 0.000249 segundos
+Tiempo de ejecucion C (n=100): 0.000000 segundos

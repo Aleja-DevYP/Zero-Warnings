@@ -1,0 +1,1 @@
+Tiempo de ejecucion Python (n=100): 0.000249 segundos
