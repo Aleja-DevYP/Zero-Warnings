@@ -1,12 +1,5 @@
 /*
- * UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
- * VICERRECTORADO ACADÉMICO - COORDINACIÓN DE INGENIERÍA EN INFORMÁTICA
- * ASIGNATURA: LENGUAJES Y COMPILADORES
- * DOCENTE: Msc. Félix Márquez
- * PERIODO LECTIVO: 2026-II
- * 
  * EJERCICIO 1: Validador de Movimientos de Caballo en Tablero de Ajedrez
- * Implementación en lenguaje C con gestión dinámica de memoria y cronometraje de alta precisión.
  */
 
 #include <stdio.h>
@@ -138,11 +131,7 @@ char* leer_archivo_dinamico(const char* ruta) {
 int main() {
     char msg[256];
 
-    printf("======================================================================\n");
-    printf("UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)\n");
-    printf("LENGUAJES Y COMPILADORES - PRUEBA DIAGNOSTICA 2026-II\n");
-    printf("EJERCICIO 1 (C): VALIDADOR DE MOVIMIENTOS DE CABALLO\n");
-    printf("======================================================================\n\n");
+    printf("=== EJERCICIO 1: VALIDADOR DE MOVIMIENTOS DE CABALLO ===\n\n");
 
     /* Pruebas del enunciado */
     struct {

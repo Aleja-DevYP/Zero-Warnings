@@ -1,13 +1,5 @@
 /*
- * UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
- * VICERRECTORADO ACADÉMICO - COORDINACIÓN DE INGENIERÍA EN INFORMÁTICA
- * ASIGNATURA: LENGUAJES Y COMPILADORES
- * DOCENTE: Msc. Félix Márquez
- * PERIODO LECTIVO: 2026-II
- * 
- * EJERCICIO 2: Generación de Polinomio (x+1)^n con Triángulo de Pascal
- * y Evaluación Paso a Paso f(x) = (x+1)^n.
- * Implementado en C con memoria dinámica (malloc/free) y soporte de 128-bits.
+ * EJERCICIO 2: Polinomio (x+1)^n con Triángulo de Pascal (Lenguaje C)
  */
 
 #include <stdio.h>
@@ -170,11 +162,7 @@ void calcular_paso_a_paso_c(int n, const uint128_t* coefs, unsigned long long x)
 }
 
 int main() {
-    printf("======================================================================\n");
-    printf("UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)\n");
-    printf("LENGUAJES Y COMPILADORES - PRUEBA DIAGNOSTICA 2026-II\n");
-    printf("EJERCICIO 2 (C): POLINOMIO (x+1)^n Y TRIANGULO DE PASCAL\n");
-    printf("======================================================================\n\n");
+    printf("=== EJERCICIO 2: POLINOMIO (x+1)^n Y TRIANGULO DE PASCAL (C) ===\n\n");
 
     /* a) Generar y mostrar para n=0 a 7 usando memoria dinámica */
     printf("a) Coeficientes del triangulo de Pascal y polinomios generados (n=0 a 7):\n");

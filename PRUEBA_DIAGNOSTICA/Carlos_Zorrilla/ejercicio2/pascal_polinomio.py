@@ -1,14 +1,4 @@
-"""
-UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
-CARRERA: INGENIERÍA EN INFORMÁTICA
-ASIGNATURA: LENGUAJES Y COMPILADORES
-PROFESOR: MSc. Félix Márquez
-PERIODO: 2026-II
-
-EJERCICIO 2: Generación de Polinomio (x+1)^n mediante Triángulo de Pascal,
-Evaluación Paso a Paso con x dado y Medición de Tiempos para n=100.
-Implementación en Python.
-"""
+"""EJERCICIO 2: Polinomio (x+1)^n mediante Triángulo de Pascal (Python)"""
 
 import time
 import os
@@ -150,11 +140,7 @@ def benchmark_n100(repeticiones=5000):
     return tiempo_prom_ms, tiempo_prom_us, fila
 
 def main():
-    print("======================================================================")
-    print("UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)")
-    print("LENGUAJES Y COMPILADORES - PRUEBA DIAGNÓSTICA 2026-II")
-    print("EJERCICIO 2: POLINOMIO (x+1)^n Y TRIÁNGULO DE PASCAL (PYTHON)")
-    print("======================================================================\n")
+    print("=== EJERCICIO 2: POLINOMIO (x+1)^n Y TRIÁNGULO DE PASCAL (PYTHON) ===\n")
     
     # Demostración de las filas 0 a 7 (como en la figura del examen)
     print("a) Coeficientes del triángulo de Pascal y polinomios generados (n=0 a 7):")

@@ -1,12 +1,5 @@
 /*
- * UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)
- * VICERRECTORADO ACADÉMICO - COORDINACIÓN DE INGENIERÍA EN INFORMÁTICA
- * ASIGNATURA: LENGUAJES Y COMPILADORES
- * DOCENTE: Msc. Félix Márquez
- * PERIODO LECTIVO: 2026-II
- * 
- * EJERCICIO 3: Analizador Léxico para Detección y Traducción de Palabras Reservadas en C
- * Implementación en C con carga en memoria dinámica (malloc/free) y análisis léxico formal.
+ * EJERCICIO 3: Analizador Léxico y Traductor de Palabras Reservadas en C
  */
 
 #include <stdio.h>
@@ -246,11 +239,7 @@ int main(int argc, char* argv[]) {
     const char* ruta_entrada = (argc > 1) ? argv[1] : "ejemplo_entrada.c";
     const char* ruta_salida = (argc > 2) ? argv[2] : "ejemplo_traducido.c";
 
-    printf("======================================================================\n");
-    printf("UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA (UNEG)\n");
-    printf("LENGUAJES Y COMPILADORES - PRUEBA DIAGNOSTICA 2026-II\n");
-    printf("EJERCICIO 3 (C): DETECCION Y TRADUCCION DE PALABRAS RESERVADAS EN C\n");
-    printf("======================================================================\n\n");
+    printf("=== EJERCICIO 3: ANALIZADOR LEXICO Y TRADUCTOR DE PALABRAS RESERVADAS (C) ===\n\n");
 
     printf("[1] Cargando archivo '%s' en memoria dinamica (Heap)...\n", ruta_entrada);
     long tamano_bytes = 0;
