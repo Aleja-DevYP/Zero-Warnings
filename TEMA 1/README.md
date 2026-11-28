@@ -10,7 +10,7 @@
 
 - **`Informe_Tema1_ZeroWarnings_final.pdf`** — Informe de investigación completo bajo normas APA, incluyendo el desarrollo del Planteamiento 18 y la sección del Reto Evaluado (Sección 7.6).
 - **`validador_diagramas_t.py`** — Implementación en Python del *Validador Formal de Acoplamiento para Diagramas T (Tombstone Diagrams)* correspondiente al Reto Evaluado de la Sección 7.6.
-- **`enlace_video_drive.txt`** — Registro del enlace de Google Drive del video de defensa integrado del grupo.
+- **`enlace_video_drive.txt`** — Registro del enlace de Google Drive del video de defensa integrado del grupo: [Ver video de defensa en Google Drive](https://drive.google.com/file/d/1MSTQdJt2r0-FDHHZYfsGpxWAuia2QTGN/view?usp=sharing).
 
 ## Ejecución del Validador de Diagramas T
 
